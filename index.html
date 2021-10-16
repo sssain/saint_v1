@@ -10,7 +10,6 @@
     href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="../res/fontawesome/css/all.css" />
 </head>
 <body>
 
@@ -32,13 +31,30 @@
         <span class="desc">Hello, i'm Naufal.</span>
 
     <!---- a-ano ini m-music player >///< ---->
+    <a id="play-pause-button" class="fa fa-play"></a>
     <script>
-      var audio = new Audio("https://raw.githubusercontent.com/sssain/sssain.github.io/main/audio/fukashigi%20no%20carte.mp3")
-      audio.play()
-      audio.muted = true;
-      </script>>
+    var audio = new Audio("https://raw.githubusercontent.com/sssain/sssain.github.io/main/audio/fukashigi%20no%20carte.mp3");
 
+      $('#play-pause-button').on("click",function(){
+        if($(this).hasClass('fa-play'))
+         {
+           $(this).removeClass('fa-play');
+           $(this).addClass('fa-pause');
+           audio.play();
+         }
+        else
+         {
+           $(this).removeClass('fa-pause');
+           $(this).addClass('fa-play');
+           audio.pause();
+         }
+      });
+      
+      audio.onended = function() {
+           $("#play-pause-button").removeClass('fa-pause');
+           $("#play-pause-button").addClass('fa-play');
+      };</script>
 
-    
+    </div>     
 </body>
 </html>
