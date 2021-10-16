@@ -1,0 +1,30 @@
+/* heading */
+
+
+.saint{
+    color:#DA0037;
+    position: absolute;
+    font-family: Verdana;
+    text-align: center;
+    font-weight: 700;
+    font-size:110px;
+    transform: translate(50%, -50%);
+    top: 50%;
+    right: 50%
+}
+/* deskripsi */
+
+.desc{
+    color:#EDEDED;
+    font-family: verdana;
+    font-weight: 500;
+    position: absolute;
+    top: 57%;
+    right: 56%;
+}
+
+/* background */
+
+body{
+    background-color:#171717
+}

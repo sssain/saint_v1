@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sssain'tt</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="../res/fontawesome/css/all.css" />
+</head>
+<body>
+
+    <!----- particles.js banh ----->
+
+    <div id="particles-js" style="width: 100%;height: 100vh;"></div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script> 
+
+    <!---- heading ---->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/heading.js"></script>
+
+        <span class="saint">sssain'tt</span>
+        <span class="desc">Hello, i'm Naufal.</span>
+
+    <!---- a-ano ini m-music player >///< ---->
+    <div class="bg-music">
+        <audio hidden id="player" controls autoplay loop>
+          <source src="/audio/fukashigi no carte.mp3" type="audio/mp3">
+        </audio>
+        <script>
+          const player = new Plyr('#player', {
+            controls: ['play-large', 'play'],
+            autoplay: 'true',
+            displayDuration: 'false',
+          });
+          player.volume = 0.2;
+        </script>
+
+
+    
+</body>
+</html>
