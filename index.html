@@ -32,18 +32,11 @@
         <span class="desc">Hello, i'm Naufal.</span>
 
     <!---- a-ano ini m-music player >///< ---->
-    <div class="bg-music">
-        <audio hidden id="player" controls autoplay loop>
-          <source src="/audio/fukashigi no carte.mp3" type="audio/mp3">
-        </audio>
-        <script>
-          const player = new Plyr('#player', {
-            controls: ['play-large', 'play'],
-            autoplay: 'true',
-            displayDuration: 'false',
-          });
-          player.volume = 0.2;
-        </script>
+    <audio hidden controls autoplay>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
 
     
