@@ -18,20 +18,26 @@
     color:#EDEDED;
     font-family: verdana;
     font-weight: 500;
+    font-size: 16px;
     position: absolute;
     top: 57%;
     right: 56%;
 }
+/* tombol */
+
+
+
+
 
 /* music player */
 
 #play-pause-button{
-    color:#DA0037;
+    color:#da0037;
     font-size: 50px;
     cursor: pointer;
     position: absolute;
     transform: translate(50%, -50%);
-    top: 95%;
+    top: 93%;
     right: 50%
     
 }
@@ -42,4 +48,29 @@ body{
     background-color:#171717
 }
 
-  
+/* mobile version (this is frustating) */
+
+@media only screen and (max-width: 600px) {
+
+    .saint{
+        color:#DA0037;
+        position: absolute;
+        font-family: Verdana;
+        text-align: center;
+        font-weight: 700;
+        font-size:70px;
+        transform: translate(50%, -50%);
+        top: 50%;
+        right: 50%
+    }
+
+    .desc{
+        color:#EDEDED;
+        font-family: verdana;
+        font-weight: 500;
+        font-size: 16px;
+        position: absolute;
+        top: 55%;
+        right: 56%;
+    }
+}
