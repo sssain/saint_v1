@@ -44,6 +44,7 @@
     <a id="play-pause-button" class="fa fa-play"></a>
     <script>
     var audio = new Audio("https://raw.githubusercontent.com/sssain/sssain.github.io/main/audio/fukashigi%20no%20carte.mp3");
+    audio.volume = 0.2;
 
       $('#play-pause-button').on("click",function(){
         if($(this).hasClass('fa-play'))
