@@ -2,6 +2,8 @@ body {
     background-color: #171717;
 }
 
+/* heading */
+
 .heading {
     color:rgb(218, 0, 55);
     position: absolute;
@@ -45,6 +47,42 @@ body {
     filter: opacity(70%);
 
   }
+
+  /* deco */
+
+  .saint{
+      color: #1a1a1a;
+      position: absolute;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 550;
+      font-size: 300px;
+      transform: rotate(90deg);
+      right: -400px;
+      top: 40%;
+  }
+
+  .back{
+      color: #DA0037;
+      text-decoration: none;
+      font-family: Verdana;
+      padding: 14px 25px;
+      font-weight: 600;
+      background-color: #171717;
+      border-radius: 20px;
+      display: inline-block;
+      position: absolute;
+      transition: 0.3s;
+
+ }
+
+   .back:hover{
+       color:#EDEDED;
+       background-color: #313131;
+   }
+
+
+
+
 
   /* mobile version (this is frustating #2) */
 
