@@ -83,6 +83,22 @@ body {
        background-color: #313131;
    }
 
+   .banner{
+       position: absolute;
+       background-color: #1d1d1d;
+       box-shadow:
+       2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+       6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+       12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+       22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+       41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+       100px 100px 80px rgba(0, 0, 0, 0.07);
+       border-radius: 10px;
+       right: 40%;
+       top: 90%;
+
+   }
+
 
 
 
@@ -90,6 +106,13 @@ body {
   /* mobile version (this is frustating #2) */
 
 @media only screen and (max-width: 600px) {
+
+    body {
+        background-color: #171717;
+        overflow: hidden;
+    }
+
+
 
     .heading {
         color:rgb(218, 0, 55);
@@ -130,9 +153,49 @@ body {
         right: 33.5%;
         transition: 0.3s;
       }
-    
 
+      .saint{
+        color: #1a1a1a;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 550;
+        font-size: 0px;
+        transform: rotate(90deg);
+        right: -400px;
+        top: 40%;
+    }
 
+    .banner{
+        position: absolute;
+        background-color: #1d1d1d;
+        box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        block-size: 70px;
+        right: 6%;
+        top: 85%;
+ 
+    }
+
+    .back{
+        color: #DA0037;
+        text-decoration: none;
+        font-family: Verdana;
+        padding: 14px 25px;
+        font-weight: 600;
+        background-color: #171717;
+        border-radius: 20px;
+        display: inline-block;
+        position: absolute;
+        transition: 0.3s;
+        right: 40%;
+  
+   }
 
 
 
