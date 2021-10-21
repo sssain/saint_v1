@@ -99,6 +99,24 @@ body {
 
    }
 
+   .garis{
+       background-color: #DA0037;
+       height: 450px;
+       width: 2px;
+       position: absolute;
+       right: 90%;
+       top: 80%;
+   }
+
+   .garislagi{
+       background-color: #DA0037;
+       height: 350px;
+       width: 2px;
+       position: absolute;
+       right: 10%;
+       top: 0.1%;
+   }
+
 
 
 
