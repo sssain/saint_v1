@@ -1,16 +1,35 @@
 body {
     background-color: #171717;
-    overflow: hidden;
+    overflow: auto;
     cursor: default;
     user-select: none;
 }
 
-
+/* sekrol sekrol */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #171717; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #DA0037; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b9002e; 
+  }
 
 /* heading */
 
 .heading {
-    color:rgb(218, 0, 55);
+    color:#DA0037;
     position: absolute;
     font-family: Verdana;
     text-align: left;
@@ -19,7 +38,11 @@ body {
     top: 20%;
     right: 33%;
     transform: translate(50%, -50%);
-    text-align: left;
+    text-align: left;}
+
+.heading2{
+    color: #171717;
+    -webkit-text-stroke: 2px #DA0037;
 }
 
 .desc {
@@ -88,16 +111,10 @@ body {
    .banner{
        position: absolute;
        background-color: #1d1d1d;
-       box-shadow:
-       2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-       6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-       12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-       22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-       41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-       100px 100px 80px rgba(0, 0, 0, 0.07);
+       box-shadow: #0000   0px 8px 24px;
        border-radius: 10px;
-       right: 40%;
-       top: 90%;
+       right: 39%;
+       top: 115%;
        transition: 0.3s;
 
    }
@@ -112,7 +129,7 @@ body {
        width: 2px;
        position: absolute;
        right: 90%;
-       top: 80%;
+       top: 90%;
    }
 
    .garislagi{
@@ -124,9 +141,75 @@ body {
        top: 0.1%;
    }
 
+  /* work */
+
+  .work{
+      color: #DA0037;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 550;
+      font-size: 25px;
+      position: absolute;
+      right: 74.5%;
+      top: 55%;
+  }
+
+  .overlay{
+      position: absolute;
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+      background-color: rgba(0, 0, 0, 0.205);
+      height: 50px;
+      width: 450px;
+      right: 58.5%;
+      top: 60%;
+      bottom: 100%;
+      height:0;
+      opacity: 0;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      transition: .5s ease;
+
+  }
+  .gambar1{
+      position: absolute;
+      width: 450px;
+      height: 250px;
+      right: 58.5%;
+      top: 60%;
+      border-radius: 20px;
+    }
+
+    .container{
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.50);
+    }
+
+    .xyz{
+    position: absolute;
+    color: #DA0037;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    right: 65%;
+    top: 25%;
+    font-weight: 550;
+    font-size: 20px;
+    }
+   
+  .container:hover .overlay {
+    opacity: 1;
+    bottom: 0;
+    height: 5%;
+
+   }
+
+   
+
+   
+
+  
 
 
-
+  
 
   /* mobile version (this is frustating #2) */
 
@@ -136,7 +219,6 @@ body {
         background-color: #171717;
         overflow: hidden;
     }
-
 
 
     .heading {
@@ -150,6 +232,12 @@ body {
         transform: translate(50%, -50%);
         text-align: left;
     }
+
+    
+.heading2{
+    color: #171717;
+    -webkit-text-stroke: 1px #DA0037;
+}
 
     .desc {
         color:#EDEDED;
@@ -238,11 +326,21 @@ body {
     width: 2px;
     position: absolute;
     right: 10%;
-    top: 0.1%;
+    top: -30%;
     z-index: -1
 }
 
+.container{
+    opacity: none;
+}
 
+.gambar1{
+    opacity: 0;
+}
+
+.work{
+    opacity: 0;
+}
 
 
 
