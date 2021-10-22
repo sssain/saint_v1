@@ -1,6 +1,6 @@
 body {
     background-color: #171717;
-    overflow:hidden;
+    overflow-y: scroll;
     cursor: default;
     user-select: none;
 }
@@ -116,7 +116,7 @@ body {
        -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
        border-radius: 10px;
        right: 39%;
-       top: 90%;
+       top: 125%;
        transition: 0.3s;
 
    }
@@ -127,11 +127,11 @@ body {
 
    .garis{
        background-color: #DA0037;
-       height: 450px;
+       height: 355px;
        width: 2px;
        position: absolute;
        right: 90%;
-       top: 90%;
+       top: 100%;
    }
 
    .garislagi{
@@ -142,6 +142,28 @@ body {
        right: 10%;
        top: 0.1%;
    }
+
+   .scrolldown{
+       color: #DA0037;
+       font-size: 40px;
+       font-weight: 100;
+       position: absolute;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       right: 49.3%;
+       top: 95%;
+   }
+
+   @keyframes lompat {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-30px); }
+   }
+
+   .scrolldown {
+    animation: lompat 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+   
 
   /* work */
 
@@ -205,28 +227,6 @@ body {
     height: 5%;
 
    }
-
-   
-
-   /* music player */
-
-   #play-pause-button{
-    color:#da0037;
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    transition: 0.4s;
-    transform: translate(50%, -50%);
-    top: 95%;
-    right: 97%
-    
-    
-}
-
-#play-pause-button:hover{
-    filter: opacity(70%);
-}
-
   
 
 
