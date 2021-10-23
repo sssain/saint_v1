@@ -1,5 +1,6 @@
-# sssain.github.io
-personal website written in html, css, and javascript
+# sssaintt
+
+My old portfolio website
 
 # License
 
